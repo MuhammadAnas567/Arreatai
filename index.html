@@ -184,7 +184,14 @@ function Navbar({ active, setActive, onLoginClick }) {
 
         {/* Right */}
         <div style={{ display:'flex', alignItems:'center', gap:10, flexShrink:0 }}>
-         
+          <select style={{
+            background:'transparent', border:'1px solid var(--border)', borderRadius:8,
+            color:'var(--text2)', padding:'6px 10px', fontSize:13, cursor:'pointer',
+            fontFamily:"'Satoshi',sans-serif",
+          }}>
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+          </select>
           <button onClick={onLoginClick}
             style={{
               background:'transparent',
